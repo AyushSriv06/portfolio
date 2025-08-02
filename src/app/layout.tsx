@@ -8,11 +8,11 @@ import Footer from '@/components/Footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Ayush Srivastava - Full Stack Developer & Software Engineer',
-  description: 'Personal portfolio of Ayush Srivastava, Full Stack Developer and Software Engineer specializing in web development, backend systems, and workflow automation.',
-  keywords: ['portfolio', 'developer', 'full stack', 'web development', 'backend', 'software engineer', 'Ayush Srivastava'],
-  authors: [{ name: 'Ayush Srivastava' }],
-  creator: 'Ayush Srivastava',
+  title: 'Ronit Raj - AI/ML Developer & Open Source Enthusiast',
+  description: 'Personal portfolio of Ronit Raj, AI/ML Developer and Open Source Contributor specializing in machine learning, scientific computing, and web development.',
+  keywords: ['portfolio', 'developer', 'machine learning', 'AI', 'web development', 'scientific computing', 'Ronit Raj'],
+  authors: [{ name: 'Ronit Raj' }],
+  creator: 'Ronit Raj',
 }
 
 export default function RootLayout({

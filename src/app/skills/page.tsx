@@ -12,94 +12,59 @@ import { TbBrandOpenai } from "react-icons/tb";
 export default function Skills() {
   const skillCategories = [
     {
-      name: "Programming Languages",
+      name: "AI & Machine Learning",
       skills: [
         {
-          name: "TypeScript",
-          icon: <SiTypescript className="text-blue-500" />,
-          description: "Typed superset of JavaScript for large-scale applications",
+          name: "TensorFlow",
+          icon: <SiTensorflow className="text-orange-500" />,
+          description: "Deep learning framework for building and training neural networks",
           proficiency: "Advanced",
         },
         {
-          name: "JavaScript",
-          icon: <SiJavascript className="text-yellow-500" />,
-          description: "Dynamic programming language for web development",
+          name: "PyTorch",
+          icon: <SiPytorch className="text-red-500" />,
+          description: "Deep learning library with strong GPU acceleration support",
           proficiency: "Advanced",
         },
         {
-          name: "C++",
-          icon: <div className="text-blue-600">C++</div>,
-          description: "High-performance programming language for system programming",
-          proficiency: "Intermediate",
+          name: "Scikit-Learn",
+          icon: <SiScikitlearn className="text-blue-500" />,
+          description: "Machine learning library for classical ML algorithms",
+          proficiency: "Advanced",
         },
         {
-          name: "C",
-          icon: <div className="text-gray-600">C</div>,
-          description: "Low-level programming language for system programming",
-          proficiency: "Intermediate",
+          name: "Keras",
+          icon: <SiKeras className="text-red-600" />,
+          description: "High-level neural networks API that runs on top of TensorFlow",
+          proficiency: "Advanced",
         },
         {
-          name: "Golang",
-          icon: <div className="text-blue-400">Go</div>,
-          description: "Efficient language for concurrent programming and networking",
-          proficiency: "Intermediate",
+          name: "OpenAI",
+          icon: <TbBrandOpenai className="text-green-500" />,
+          description: "Building applications with GPT and other AI models",
+          proficiency: "Advanced",
         },
         {
-          name: "SQL",
-          icon: <div className="text-orange-500">SQL</div>,
-          description: "Database query language for data management",
-          proficiency: "Intermediate",
+          name: "Pandas & NumPy",
+          icon: <div className="flex gap-1"><SiPandas className="text-blue-400" /><SiNumpy className="text-blue-600" /></div>,
+          description: "Data manipulation and numerical computing libraries",
+          proficiency: "Advanced",
         },
       ]
     },
     {
-      name: "Frontend Technologies",
-      skills: [
-        {
-          name: "React",
-          icon: <SiReact className="text-blue-500" />,
-          description: "Popular JavaScript library for building user interfaces",
-          proficiency: "Advanced",
-        },
-        {
-          name: "Next.js",
-          icon: <SiNextdotjs className="text-black" />,
-          description: "React framework for production-ready web applications",
-          proficiency: "Advanced",
-        },
-        {
-          name: "Redux",
-          icon: <div className="text-purple-500">Redux</div>,
-          description: "Predictable state container for JavaScript applications",
-          proficiency: "Intermediate",
-        },
-        {
-          name: "TailwindCSS",
-          icon: <SiTailwindcss className="text-teal-500" />,
-          description: "Utility-first CSS framework for rapid UI development",
-          proficiency: "Advanced",
-        },
-        {
-          name: "CSS3",
-          icon: <div className="text-blue-500">CSS3</div>,
-          description: "Modern styling language for web applications",
-          proficiency: "Intermediate",
-        },
-        {
-          name: "HTML5",
-          icon: <div className="text-orange-500">HTML5</div>,
-          description: "Latest version of markup language for web content",
-          proficiency: "Intermediate",
-        },
-      ]
-    },
-    {
-      name: "Backend Technologies",
+      name: "Backend Development",
       skills: [
         {
           name: "Node.js",
           icon: <SiNodedotjs className="text-green-500" />,
           description: "JavaScript runtime for building scalable server-side applications",
+          proficiency: "Advanced",
+        },
+        {
+          name: "Python",
+          icon: <SiPython className="text-yellow-500" />,
+          description: "Versatile language for backend, data processing, and ML",
           proficiency: "Advanced",
         },
         {
@@ -109,44 +74,38 @@ export default function Skills() {
           proficiency: "Advanced",
         },
         {
-          name: "REST API",
-          icon: <div className="text-green-600">API</div>,
-          description: "RESTful web services for client-server communication",
+          name: "FastAPI",
+          icon: <SiFastapi className="text-teal-500" />,
+          description: "High-performance web framework for building APIs with Python",
+          proficiency: "Intermediate",
+        },
+        {
+          name: "Django",
+          icon: <SiDjango className="text-green-700" />,
+          description: "High-level Python web framework for rapid development",
+          proficiency: "Intermediate",
+        },
+        {
+          name: "TypeScript",
+          icon: <SiTypescript className="text-blue-500" />,
+          description: "Typed superset of JavaScript for large-scale applications",
           proficiency: "Advanced",
-        },
-        {
-          name: "Microservices",
-          icon: <div className="text-blue-600">μS</div>,
-          description: "Architectural pattern for building distributed systems",
-          proficiency: "Intermediate",
-        },
-        {
-          name: "Apache Kafka",
-          icon: <div className="text-black">Kafka</div>,
-          description: "Distributed streaming platform for real-time data processing",
-          proficiency: "Intermediate",
-        },
-        {
-          name: "WebSockets",
-          icon: <div className="text-purple-500">WS</div>,
-          description: "Real-time bidirectional communication protocol",
-          proficiency: "Intermediate",
         },
       ]
     },
     {
-      name: "Database Technologies",
+      name: "Databases & Infrastructure",
       skills: [
-        {
-          name: "PostgreSQL",
-          icon: <SiPostgresql className="text-blue-600" />,
-          description: "Advanced open-source relational database",
-          proficiency: "Advanced",
-        },
         {
           name: "MongoDB",
           icon: <SiMongodb className="text-green-600" />,
           description: "NoSQL database for modern applications",
+          proficiency: "Advanced",
+        },
+        {
+          name: "PostgreSQL",
+          icon: <SiPostgresql className="text-blue-600" />,
+          description: "Advanced open-source relational database",
           proficiency: "Advanced",
         },
         {
@@ -156,28 +115,11 @@ export default function Skills() {
           proficiency: "Intermediate",
         },
         {
-          name: "Prisma ORM",
-          icon: <div className="text-indigo-500">Prisma</div>,
-          description: "Modern database toolkit and ORM for TypeScript and Node.js",
+          name: "Redis",
+          icon: <SiRedis className="text-red-500" />,
+          description: "In-memory data structure store used as database and cache",
           proficiency: "Intermediate",
         },
-        {
-          name: "Database Design",
-          icon: <div className="text-gray-600">DB</div>,
-          description: "Designing efficient and scalable database schemas",
-          proficiency: "Intermediate",
-        },
-        {
-          name: "Query Optimization",
-          icon: <div className="text-green-600">⚡</div>,
-          description: "Optimizing database queries for better performance",
-          proficiency: "Intermediate",
-        },
-      ]
-    },
-    {
-      name: "Development Tools",
-      skills: [
         {
           name: "Docker",
           icon: <SiDocker className="text-blue-500" />,
@@ -185,34 +127,10 @@ export default function Skills() {
           proficiency: "Advanced",
         },
         {
-          name: "Git",
-          icon: <SiGit className="text-red-500" />,
-          description: "Distributed version control system for tracking changes",
-          proficiency: "Advanced",
-        },
-        {
           name: "AWS",
           icon: <SiAmazon className="text-yellow-500" />,
           description: "Comprehensive cloud computing platform",
           proficiency: "Advanced",
-        },
-        {
-          name: "Vercel",
-          icon: <div className="text-black">▲</div>,
-          description: "Platform for frontend frameworks and static sites",
-          proficiency: "Intermediate",
-        },
-        {
-          name: "Postman",
-          icon: <div className="text-orange-500">📮</div>,
-          description: "API development and testing platform",
-          proficiency: "Intermediate",
-        },
-        {
-          name: "Linux",
-          icon: <div className="text-black">🐧</div>,
-          description: "Open-source operating system for development and deployment",
-          proficiency: "Intermediate",
         },
       ]
     },
@@ -264,7 +182,7 @@ export default function Skills() {
       >
         <h1 className="text-4xl font-bold mb-4">My Technical Skills</h1>
         <p className="text-xl max-w-3xl mx-auto text-gray-600 dark:text-gray-300">
-          As a full stack developer passionate about web technologies and backend solutions, I continuously expand my
+          As a developer passionate about AI and backend solutions, I continuously expand my
           expertise across these key technology areas.
         </p>
       </motion.div>

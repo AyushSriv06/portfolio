@@ -9,42 +9,46 @@ import { cn } from "@/lib/utils"
 
 const PROJECTS = [
   {
-    title: "Zipped - Workflow Automation Platform",
-    description: "A scalable platform automating multi-step workflows with user-defined triggers and actions, achieving 95% execution success rate with event-driven microservices architecture.",
-    image: "/projects/zipped.png",
-    tags: ["Next.js", "Tailwind CSS", "Kafka", "Docker", "PostgreSQL", "Prisma"],
-    codeLink: "https://github.com/ayush-srivastava/zipped",
-    type: "Web Development"
+    title: "GeneTrust AI Studio",
+    description: "A CRISPR intelligence platform using Next.js, TypeScript, and DNABERT model for complex genetic sequence analysis and ranking.",
+    image: "/projects/genetrust.png",
+    tags: ["Next.js", "TypeScript", "Express.js", "FastAPI", "PyTorch"],
+    demoLink: "https://genetrust.vercel.app/",
+    codeLink: "https://github.com/Ronit-Raj9/hackhazard-project-genetrust",
+    type: "AI / Bioinformatics"
   },
   {
-    title: "ITshare - P2P File Sharing Application",
-    description: "Peer-to-peer CLI application with UDP broadcast peer discovery and room-based transfers, enabling seamless file sharing across 100+ devices with 75% improved efficiency.",
-    image: "/projects/itshare.png",
-    tags: ["Go", "TCP", "UDP", "Networking", "CLI"],
-    codeLink: "https://github.com/ayush-srivastava/itshare",
-    type: "Networking"
+    title: "Ionia Testing Platform",
+    description: "Comprehensive end-to-end JEE testing system with robust authentication, admin panel, and detailed performance analytics.",
+    image: "/projects/ionia.png",
+    tags: ["Next.js", "JavaScript", "Express.js", "Cloudinary", "TailwindCSS"],
+    demoLink: "https://www.ionia.sbs/",
+    codeLink: "https://github.com/Ronit-Raj9/ionia-next",
+    type: "EdTech"
   },
   
   {
-    title: "Itexectes - Remote Code Executer",
-    description: "A remote code execution platform built using Kubernetes and Docker for secure and scalable code execution in isolated environments.",
-    image: "/projects/itexectes.png",
-    tags: ["Kubernetes", "Docker", "DevOps", "Microservices"],
-    codeLink: "https://github.com/ayush-srivastava/itexectes",
-    type: "DevOps"
+    title: "E-Cell IIIT Gwalior",
+    description: "Real-time analytics dashboard for e-commerce platforms with predictive inventory management and customer behavior insights.",
+    image: "/projects/ecell.png",
+    tags: ["Next.js", "MongoDB", "Chart.js", "Tailwind CSS"],
+    demoLink: "https://ecell-puce.vercel.app/",
+    codeLink: "https://github.com/Ronit-Raj9/Ecell",
+    type: "Web Development"
   },
   {
-    title: "Len-Den - Digital Wallet Application",
-    description: "Full-stack wallet application enabling secure P2P transactions for 200+ users with simulated bank webhook integration processing 1000+ monthly transactions.",
-    image: "/projects/len-den.png",
-    tags: ["Next.js", "Tailwind CSS", "Prisma", "Node.js", "NextAuth", "PostgreSQL"],
-    codeLink: "https://github.com/ayush-srivastava/len-den",
-    type: "Web Development"
+    title: "Graph Neural Networks",
+    description: "",
+    image: "/projects/graphml.png",
+    tags: ["PyTorch", "Python", "Graph Neural Networks", "Data Visualization"],
+    demoLink: "https://graphml.example.com",
+    codeLink: "https://github.com/Ronit-Raj9/graph-research",
+    type: "Research"
   }
 ]
 
 
-const categories = ["All", "Web Development", "Networking", "DevOps"]
+const categories = ["All", "Web Development", "AI / Bioinformatics", "Machine Learning", "Research", "EdTech"]
 
 function ProjectCard({ project, index }: { project: typeof PROJECTS[0], index: number }) {
   return (
@@ -154,8 +158,7 @@ function ProjectCard({ project, index }: { project: typeof PROJECTS[0], index: n
           transition={{ delay: index * 0.1 + 0.5, duration: 0.5 }}
           className="flex gap-3 items-center mt-auto"
         >
-          {/* Live Demo button commented out as requested */}
-          {/* <motion.a
+          <motion.a
             href={project.demoLink}
             target="_blank"
             rel="noopener noreferrer"
@@ -167,7 +170,7 @@ function ProjectCard({ project, index }: { project: typeof PROJECTS[0], index: n
           >
             <span>Live Demo</span> 
             <BsArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />
-          </motion.a> */}
+          </motion.a>
           
           <motion.a
             href={project.codeLink}

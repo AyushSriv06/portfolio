@@ -108,11 +108,11 @@ export default function Footer() {
           {/* Right column - Creative contact & availability */}
           <div className="flex flex-col items-center justify-center space-y-4 md:items-end">
             <Link 
-              href="mailto:ayush.srivastava@example.com"
+              href="mailto:ronitk964@gmail.com"
               className="group relative inline-flex items-center justify-center overflow-hidden rounded-full p-4 font-mono text-sm font-medium"
             >
               <span className="absolute h-0 w-0 rounded-full bg-primary opacity-10 transition-all duration-500 ease-out group-hover:h-56 group-hover:w-56"></span>
-              <span className="relative">ayush.srivastava@example.com</span>
+              <span className="relative">ronitk964@gmail.com</span>
             </Link>
             
             <div className="flex items-center space-x-1">
@@ -137,4 +137,4 @@ export default function Footer() {
       </div>
     </footer>
   )
-}
+} 
