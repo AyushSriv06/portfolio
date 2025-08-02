@@ -7,27 +7,27 @@ import { cn } from "@/lib/utils"
 const CONTACT_METHODS = [
   {
     name: "Email",
-    value: "your.email@example.com",
+    value: "ayush.srivastava@example.com",
     icon: FaEnvelope,
-    href: "mailto:your.email@example.com",
+    href: "mailto:ayush.srivastava@example.com",
   },
   {
     name: "GitHub",
-    value: "@Ronit-Raj9",
+    value: "@ayush-srivastava",
     icon: FaGithub,
-    href: "https://github.com/Ronit-Raj9",
+    href: "https://github.com/ayush-srivastava",
   },
   {
     name: "LinkedIn",
-    value: "Ronit Raj",
+    value: "Ayush Srivastava",
     icon: FaLinkedin,
-    href: "https://www.linkedin.com/in/ronit-raj-662485225/",
+    href: "https://www.linkedin.com/in/ayush-srivastava",
   },
   {
     name: "Twitter",
-    value: "@ronit__raj",
+    value: "@ayush_srivastava",
     icon: FaTwitter,
-    href: "https://x.com/ronit__raj",
+    href: "https://x.com/ayush_srivastava",
   },
 ]
 

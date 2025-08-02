@@ -3,7 +3,7 @@ import { revalidatePath } from 'next/cache';
 
 const GITHUB_API_URL = 'https://api.github.com';
 const GITHUB_GRAPHQL_URL = 'https://api.github.com/graphql';
-const USERNAME = 'Ronit-Raj9';
+const USERNAME = 'ayush-srivastava';
 
 export async function GET(request: Request) {
   try {

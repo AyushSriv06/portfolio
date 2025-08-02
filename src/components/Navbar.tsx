@@ -47,7 +47,7 @@ export default function Navbar() {
         <div className="flex items-center">
           <Link href="/" className="flex items-center space-x-2">
             <span className="font-bold text-2xl flex items-center justify-center">
-              <span className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-purple-600">RR</span>
+              <span className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-purple-600">AS</span>
             </span>
           </Link>
         </div>
